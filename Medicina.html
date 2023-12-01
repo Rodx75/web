@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>NutriFisiMed - Medicina</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <!-- Favicon Citas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
+
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-light pt-3 d-none d-lg-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
+                    <div class="d-inline-flex align-items-center">
+                        <p><i class="fa fa-envelope mr-2"></i>Maribelnut@yo.com</p>
+                        <p class="text-body px-3">|</p>
+                        <p><i class="fa fa-phone-alt mr-2"></i>+59163389950</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center text-lg-right">
+                    <div class="d-inline-flex align-items-center">
+                        <a class="text-primary px-3" href="">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="text-primary px-3" href="">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a class="text-primary px-3" href="">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a class="text-primary px-3" href="">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a class="text-primary pl-3" href="">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid position-relative nav-bar p-0">
+        <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9;">
+            <nav class="navbar navbar-expand-lg bg-light navbar-light shadow-lg py-3 py-lg-0 pl-3 pl-lg-5">
+                <a href="" class="navbar-brand">
+                    <h1 class="m-0 text-primary"><span class="text-dark">NutriFisio</span>Med</h1>
+                </a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto py-0">
+                        <a href="index.html" class="nav-item nav-link active">Inicio</a>
+                        <a href="about.html" class="nav-item nav-link">Sobre Nosotros</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Paginas</a>
+                            <div class="dropdown-menu border-0 rounded-0 m-0">
+                                <a href="blog.html" class="dropdown-item">Nuestro Blog</a>
+                                <a href="Nutricion.html" class="dropdown-item">Nutricion</a>
+                                <a href="Fisioterapia.html" class="dropdown-item">Fisioterapia</a>
+                                <a href="Medicina.html" class="dropdown-item">Medicina</a>
+                                <a href="testimonial.html" class="dropdown-item">Comentarios</a>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="nav-item nav-link">Contactanos</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Header Start -->
+    <div class="container-fluid page-header">
+        <div class="container">
+            <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 400px">
+                <h3 class="display-4 text-white text-uppercase">Medicina</h3>
+                <div class="d-inline-flex text-white">
+                    <p class="m-0 text-uppercase"><a class="text-white" href="">Home</a></p>
+                    <i class="fa fa-angle-double-right pt-1 px-3"></i>
+                    <p class="m-0 text-uppercase">Servicios</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+
+    <!-- Reservas Box -->
+    <div class="container mt-5">
+        <div class="card p-5">
+          <h2 class="text-center mb-4">Reserva de Citas Médicas</h2>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="servicioSelect">Selecciona un Servicio:</label>
+                <select class="custom-select" id="servicioSelect">
+                  <option value="" selected>Selecciona un servicio</option>
+                  <option value="servicio1">Servicio 1</option>
+                  <option value="servicio2">Servicio 2</option>
+                  <option value="servicio3">Servicio 3</option>
+                  <!-- Agrega más opciones de servicios según sea necesario -->
+                </select>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="fechaInicio">Fecha de la Cita:</label>
+                <div class="input-group date" data-provide="datepicker">
+                    <input type="text" class="form-control" id="fechaInput" placeholder="Selecciona la fecha">
+                    <div class="input-group-append">
+                      <span class="input-group-text"><span class="fa fa-calendar"></span></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="horaInicio">Hora de la Cita:</label>
+                <input type="time" class="form-control" id="horaInput" min="09:00" max="18:00"> <!-- Establecemos el rango de horas -->
+                </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="duracionSelect">Duración de la Cita:</label>
+                <select class="custom-select" id="duracionSelect">
+                  <option value="" selected>Selecciona la duración</option>
+                  <option value="30">30 minutos</option>
+                  <option value="60">60 minutos</option>
+                  <!-- Agrega más opciones de duración según sea necesario -->
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col-md-12">
+              <button type="button" class="btn btn-primary btn-block" id="submitBtn">Reservar Cita</button>
+            </div>
+          </div>
+        </div>
+    </div>
+      
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+      
+    <script>
+        $(document).ready(function() {
+          $('#fechaInput').datepicker({
+            autoclose: true,
+            todayHighlight: true,
+            format: 'yyyy-mm-dd',
+            startDate: new Date() // Establece la fecha mínima como la fecha actual
+          });
+      
+          $('#submitBtn').click(function() {
+            const servicio = $('#servicioSelect').val();
+            const fecha = $('#fechaInput').val();
+            const hora = $('#horaInput').val();
+            const duracion = $('#duracionSelect').val();
+      
+            console.log('Servicio:', servicio);
+            console.log('Fecha de la Cita:', fecha);
+            console.log('Hora de la Cita:', hora);
+            console.log('Duración:', duracion);
+          });
+        });
+    </script>
+    <!-- Reservas Fin -->
+
+    <!-- Service Start -->
+    <div class="container-fluid py-5">
+        <div class="container pt-5 pb-3">
+            <div class="text-center mb-3 pb-3">
+                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Tu guía en Medicina</h6>
+                <h1>Cuidado y bienestar en cada diagnóstico</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-item bg-white text-center mb-2 py-5 px-4">
+                        <i class="fas fa-user-md fa-2x mx-auto mb-4"></i>
+                        <h5 class="mb-2">Nuestro servicio de medicina personalizada</h5>
+                        <p class="m-0">Creemos que la atención médica adecuada es esencial para una vida plena y saludable. En nuestro enfoque personalizado, te acompañamos en tu camino hacia una óptima salud y bienestar, proporcionando un cuidado integral y profesional para tu salud física y mental. Confía en nosotros para tu atención médica, tu salud está en las mejores manos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Service End -->
+
+    <!-- Packages Start -->
+    <div class="container-fluid py-5">
+        <div class="container pt-5 pb-3">
+            <div class="text-center mb-3 pb-3">
+                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">En El Area de Medicina</h6>
+                <h1>Ofrecemos Los Sevivios De:</h1>
+            </div>
+            <div class="row">
+            <!-- Servicio 1: Medicina General -->
+             <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="package-item bg-white mb-2">
+                        <img class="img-fluid" src="img/Med-1.webp" alt="">
+                        <div class="p-4">
+                            <a class="h5 text-decoration-none" href="#">Medicina General</a>
+                            <p>
+                                Consultas médicas de atención general para el diagnóstico y tratamiento de enfermedades comunes.
+                            </p>
+                            <div class="border-top mt-4 pt-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
+                                    <h5 class="m-0">$350</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Servicio 2: Medicina Especializada -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="package-item bg-white mb-2">
+                        <img class="img-fluid" src="img/Med-2.webp" alt="">
+                        <div class="p-4">
+                            <a class="h5 text-decoration-none" href="#">Medicina Especializada</a>
+                            <p>
+                                Consultas médicas especializadas en diversas áreas, como cardiología, dermatología, etc.
+                            </p>
+                            <div class="border-top mt-4 pt-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
+                                    <h5 class="m-0">$350</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Servicio 3: Medicina Preventiva -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="package-item bg-white mb-2">
+                        <img class="img-fluid" src="img/Med-3.webp" alt="">
+                        <div class="p-4">
+                            <a class="h5 text-decoration-none" href="#">Medicina Preventiva</a>
+                            <p>
+                                Evaluaciones y asesoramiento para prevenir enfermedades y mejorar la salud en general.
+                            </p>
+                            <div class="border-top mt-4 pt-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
+                                    <h5 class="m-0">$350</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Servicio 4: Cardiología -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="package-item bg-white mb-2">
+                        <img class="img-fluid" src="img/Med-4.webp" alt="">
+                        <div class="p-4">
+                            <a class="h5 text-decoration-none" href="#">Cardiología</a>
+                            <p>
+                                Evaluación y tratamiento de trastornos del corazón y sistema cardiovascular.
+                            </p>
+                            <div class="border-top mt-4 pt-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
+                                    <h5 class="m-0">$350</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Servicio 5: Dermatología -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="package-item bg-white mb-2">
+                        <img class="img-fluid" src="img/Med-5.webp" alt="">
+                        <div class="p-4">
+                            <a class="h5 text-decoration-none" href="#">Dermatología</a>
+                            <p>
+                                Consultas y tratamientos especializados para afecciones de la piel, cabello y uñas.
+                            </p>
+                            <div class="border-top mt-4 pt-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
+                                    <h5 class="m-0">$350</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Servicio 6: Pediatría -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="package-item bg-white mb-2">
+                        <img class="img-fluid" src="img/Med-6.webp" alt="">
+                        <div class="p-4">
+                            <a class="h5 text-decoration-none" href="#">Pediatría</a>
+                            <p>
+                                Consultas y atención médica especializada para bebés, niños y adolescentes.
+                            </p>
+                            <div class="border-top mt-4 pt-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
+                                    <h5 class="m-0">$350</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Medicina Packages End -->
+
+    <!-- Testimonial Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="text-center mb-3 pb-3">
+                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Comentarios</h6>
+                <h1>Que Dicen Nuestros Pacientes Sobre Nosotros</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel">
+                <div class="text-center pb-4">
+                    <img class="img-fluid mx-auto" src="img/testimonial-1.webp" style="width: 100px; height: 100px;" >
+                    <div class="testimonial-text bg-white p-4 mt-n5">
+                        <p class="mt-5">Comentarios. . .
+                        </p>
+                        <h5 class="text-truncate">Nombre del Paciente</h5>
+                        <span>Profession</span>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <img class="img-fluid mx-auto" src="img/testimonial-2.webp" style="width: 100px; height: 100px;" >
+                    <div class="testimonial-text bg-white p-4 mt-n5">
+                        <p class="mt-5">Comentarios. . .
+                        </p>
+                        <h5 class="text-truncate">Nombre del Paciente</h5>
+                        <span>Profession</span>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <img class="img-fluid mx-auto" src="img/testimonial-3.webp" style="width: 100px; height: 100px;" >
+                    <div class="testimonial-text bg-white p-4 mt-n5">
+                        <p class="mt-5">Comentarios. . .
+                        </p>
+                        <h5 class="text-truncate">Nombre del Paciente</h5>
+                        <span>Profession</span>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <img class="img-fluid mx-auto" src="img/testimonial-4.webp" style="width: 100px; height: 100px;" >
+                    <div class="testimonial-text bg-white p-4 mt-n5">
+                        <p class="mt-5">Comentarios . . .
+                        </p>
+                        <h5 class="text-truncate">Nombre del Paciente</h5>
+                        <span>Profession</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white-50 py-5 px-sm-3 px-lg-5" style="margin-top: 90px;">
+        <div class="row pt-5">
+            <div class="col-lg-3 col-md-6 mb-5">
+                <a href="" class="navbar-brand">
+                    <h1 class="text-primary"><span class="text-white">NutriFisio</span>Med</h1>
+                </a>
+                <p>Tu Lugar De Confianza</p>
+                <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Siguenos En</h6>
+                <div class="d-flex justify-content-start">
+                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-outline-primary btn-square" href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Nuestros Servicios</h5>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Sobre nosostros</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Recetas</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Servicios</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Packs</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Guias</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Comentarios</a>
+                    <a class="text-white-50" href="#"><i class="fa fa-angle-right mr-2"></i>Blog</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Enlaces Destacados</h5>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Sobre nosostros</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Recetas</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Servicios</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Packs</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Guias</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Comentarios</a>
+                    <a class="text-white-50" href="#"><i class="fa fa-angle-right mr-2"></i>Blog</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Contactanos</h5>
+                <p><i class="fa fa-map-marker-alt mr-2"></i>3cer y 4to anillo,SCZ</p>
+                <p><i class="fa fa-phone-alt mr-2"></i>+59163389950</p>
+                <p><i class="fa fa-envelope mr-2"></i>Maribelnut@yo.com</p>
+                <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Mantente Informado</h6>
+                <div class="w-100">
+                    <div class="input-group">
+                        <input type="text" class="form-control border-light" style="padding: 25px;" placeholder="Email">
+                        <div class="input-group-append">
+                            <button class="btn btn-primary px-3">Accerder</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5" style="border-color: rgba(256, 256, 256, .1) !important;">
+        <div class="row">
+            <div class="col-lg-6 text-center text-md-left mb-3 mb-md-0">
+                <p class="m-0 text-white-50">Copyright &copy; <a href="#">Domain</a>. All Rights Reserved.</a>
+                </p>
+            </div>
+            <div class="col-lg-6 text-center text-md-right">
+                <p class="m-0 text-white-50">Desing by Rodx75</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
